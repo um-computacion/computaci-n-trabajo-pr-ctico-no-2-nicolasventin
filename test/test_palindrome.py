@@ -21,6 +21,17 @@ class TestFrasesPalindromas(unittest.TestCase):
 
     def test_ruta(self):
         self.assertTrue(is_palindrome("La ruta nos aportó otro paso natural"))
-        
+
+class TestCasosNoPalindromos(unittest.TestCase):
+
+    def test_perro(self):
+        self.assertFalse(is_palindrome("perro"))
+
+    def test_hola_mundo(self):
+        self.assertFalse(is_palindrome("hola mundo"))
+
+    def test_palabra(self):
+        self.assertFalse(is_palindrome("palabra"))
+
 if __name__ == '__main__':
     unittest.main()
