@@ -33,5 +33,13 @@ class TestCasosNoPalindromos(unittest.TestCase):
     def test_palabra(self):
         self.assertFalse(is_palindrome("palabra"))
 
+class TestCasosEdge(unittest.TestCase):
+
+    def test_cadena_vacia(self):
+        self.assertTrue(is_palindrome(""))
+
+    def test_un_solo_caracter(self):
+        self.assertTrue(is_palindrome("a"))
+
 if __name__ == '__main__':
     unittest.main()
