@@ -1,5 +1,5 @@
 import unittest
-from palindrome import is_palindrome  # Asegurate de importar la función después
+from palindrome import is_palindrome
 
 class TestPalindromosSimples(unittest.TestCase):
     def test_oso(self):
